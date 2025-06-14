@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        H1{
+            background-color: aqua;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* selcting for all div under any  element  */
+
+        /* selecting direct <p> under  div  */
+        div > p{
+            color: blueviolet;
+            background-color: antiquewhite;
+            font-weight: bold;
+        }
+
+        /* if p is right after div selecting above direct div sibiling  */
+        div + p{
+            color: beige;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1> this i more on selectors</h1>
+    <div class="container">
+         <div class="row">
+            <ul>
+                <p>This is a paragraph</p>
+            </ul>
+         </div>
+         <p>this is second paragraph</p>
+    </div>
+    <p>this is outermost paragraph</p>
+</body>
+</html>

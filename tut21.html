@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css flexbox tutorial</title>
+    <style>
+        .container{
+            height:540px;
+            width: 100%;
+            border: 2px solid black;
+            /* Initialize the flex box to contaier  */
+            display: flex;
+            /* flx properties fo flex container  */
+            /* flex-direction: row; */
+            flex-direction: column;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            
+            /* for wrapping the boxses */
+            /* flex-wrap: wrap;    */
+            /* flex-flow: row-reverse wrap; */
+
+            /* for speifying space between container */
+            /* justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;
+
+            align-items: center;
+            align-items: flex-start;
+            align-items: flex-end; */
+            align-items: stretch;
+        }
+        .items{
+            width: 200px;
+            height: 200px;
+            background-color: turquoise;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 10px;
+        }
+        #items1{
+            /* properties for fles item  */
+            /* higher the item later it shows in container  */
+            order: 2;
+
+            /* flex-grow: 2;
+            flex-shrink: 4; */
+            flex-basis: 120px;
+            /* when flex-direction is set to row then it controls width;  */
+            /* when flex-direction is set to column then it controls height;  */
+        }
+        #items2{
+            flex-shrink: 2;
+        }
+        #items3{
+            flex: 5 5 200px;
+            align-self: flex-end;
+            flood-color: rgb(216, 113, 29);
+        }
+    </style>
+</head>
+<body>
+    <h1> this is flexbox tutorial</h1>
+    <div class="container">
+            <div class="items" id="items1">first box</div>
+            <div class="items" id="items2">second box</div>
+            <div class="items" id="items3">third box</div>
+            <!-- <div class="items" id="items4">forth box</div>
+            <div class="items" id="items5">fifth box</div>
+            <div class="items" id="items6">sixth box </div> -->
+    </div>
+</body>
+</html>

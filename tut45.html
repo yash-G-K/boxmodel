@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer'
+        }
+    .br{
+        background-color: aquamarine;
+        color: black;
+        font-size: 30px;
+        text-align: center;
+        padding: 10px 23px;
+    }
+    .nav{
+         grid-area: navbar;
+        }
+        .section{
+         grid-area: section;
+        }
+        .aside{
+         grid-area: aside;
+        }
+        footer{
+         grid-area: footer;
+        }
+
+    @media (max-width:300px){
+          body{
+             background-color: rgb(240, 98, 98);
+          }
+        }
+    @media(max-width:500px) and (min-width:300px){
+        body{
+             background-color: rgb(46, 165, 42);
+          }
+    }
+    @media(max-width:800px) and (min-width:500px){
+        body{
+             background-color: rgb(106, 42, 165);
+        }
+             .container{
+             grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+          }
+    }
+    @media(min-width:800px){
+        body{
+             background-color: rgb(157, 165, 42);
+          }
+    }
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <nav class="br">
+            home aboutus services
+        </nav>
+        <section class="br">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, harum?
+        </section>
+        <aside class="br">
+            more about me
+        </aside>
+    </div>
+    <footer class="br">copywright claim @</footer>
+</body>
+</html>

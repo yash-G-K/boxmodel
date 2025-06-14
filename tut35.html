@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css variables and custom properties</title>
+    <style>
+        /* globally access variables  */
+        :root{
+            --primary-color:yellow;
+            --secondary-color:pink;
+        }
+       .box{
+        --box-color: green;
+        width: 200px;
+        height: 200px;
+        /* ACCESSING VARIABLE USING VAR  */
+        background-color: var(--secondary-color);
+        border:2px solid saddlebrown;
+        box-shadow: 3px 3px var(--primary-color);
+        margin: 2px 9px;
+       }
+       .container{
+        display: flex;
+        align-items: center;
+        background-color: var(--box-color);
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+
+    </div>
+</body>
+</html>

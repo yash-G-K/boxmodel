@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            padding: 0;
+            margin: 0;
+            background: url('https://unsplash.com/blog/content/images/max/2560/1-WhzHXhtAvyiAV3srDUatwg.jpeg');
+        }
+        header::before{
+            background: url('https://unsplash.com/blog/content/images/max/2560/1-WhzHXhtAvyiAV3srDUatwg.jpeg');content: ;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .navigation{
+            font-size: 20px;
+            display: flex;
+        }
+        li{
+            list-style: none ;
+            padding: 34px 23px;
+        }
+        header{
+            padding: 3px;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+        }
+        section{
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid red;
+            align-items: center;
+            padding: 3px 3px;
+            justify-content: center;
+        }
+        section::before{
+            content: "this is before section";
+        }
+        h3{
+            font-size: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item1">Home</li>
+                <li class="item2">aboutus</li>
+                <li class="item3">services</li>
+                <li class="item4">contactus</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>welcome to coding world</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, suscipit perferendis veritatis rerum velit totam placeat vel sit voluptatem quidem quaerat rem nulla ullam blanditiis voluptates omnis modi repudiandae esse error? Quisquam, fugiat! Nihil.</p>
+    </section>
+<hr>
+</body>
+</html>

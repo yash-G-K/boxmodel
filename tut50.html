@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js string functions</title>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi blanditiis officiis libero odio earum non laborum esse qui fugiat aliquid, aperiam reprehenderit possimus. Nemo, modi voluptatum minima, ducimus ullam mollitia praesentium possimus similique eos nesciunt iusto aperiam aspernatur architecto sunt?</p>
+    </div>
+    <script>
+        var s ="this si a string";
+        console.log(s);
+
+        //first occurance of string
+        var position = s.indexOf('si');
+        console.log(position);
+
+        //last occurance of string
+        var str = s.lastIndexOf('si');
+        console.log(str);
+
+        var stri = s.slice(1,8);
+        console.log(stri);
+
+        var st= s.substring(1,8);
+        console.log(st);
+
+        var strin = s.substr(1,8);
+        console.log(strin);
+
+        var replaced = s.replace('si','is');
+        console.log(replaced);
+
+        // console.log(s.toUpperCase());
+        // console.log(s.toLowerCase());
+
+        // var a = s.concat('plz know it');
+        // console.log(a);
+
+        // var spaces = '      this is     not   my  job'
+        // console.log(spaces);
+        // console.log(spaces.trim());
+
+        var char = s.charAt(3);
+        console.log(char);
+
+
+    </script>
+</body>
+</html>
