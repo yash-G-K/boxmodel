@@ -72,7 +72,7 @@
         : 'Switch to 24-Hour';
       updateClock();
     });
-  </script>
 
+  </script>
 </body>
 </html>
