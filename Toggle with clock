@@ -42,7 +42,6 @@
 
   <div id="clock">--:--:--</div>
   <button id="toggleBtn">Switch to 24-Hour</button>
-
   <script>
     let use24Hour = false;
 
