@@ -61,6 +61,7 @@
       document.getElementById('clock').textContent = timeString;
     }
 
+
     setInterval(updateClock, 1000);
     updateClock();
 
@@ -71,7 +72,6 @@
         : 'Switch to 24-Hour';
       updateClock();
     });
-
   </script>
 </body>
 </html>
